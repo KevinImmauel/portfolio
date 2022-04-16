@@ -5,6 +5,7 @@ body {
     background-color: #000;
     color: #fff;
     font-family: 'PT Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 .topbar{
@@ -19,6 +20,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 10;
 }
 
 .link {
@@ -101,24 +103,17 @@ a:active {
 .head{
     font-size: 6rem;
     font-weight: bold;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin-top: 40vh;
     margin-left: 10vh;
+    overflow: hidden;
 }
 
 .bottom{
     font-size: 4rem;
     font-weight: bold;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin-left: 10vh;
-}
-
-img {
-    margin-top: 30vh;
-    margin-right: 10vh;
-    border-radius: 50%;
-    height: 24rem;
-    width: 24rem;
 }
 
 .left-container{
@@ -132,9 +127,21 @@ img {
     height: 50vh;
 }
 
+.pro-container{
+    padding: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    text-align: left;
+    background-color: #404eed;
+    height: 60vh;
+}
+
 .about-title{
     font-size: 6rem;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    margin: 2rem;
 }
 
 .about-content{
@@ -209,6 +216,61 @@ img {
     font-size: 1rem;
 }
 
+.pro-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.parent{
+    background-color: #fff;
+    margin: 2rem;
+    border-radius: 1.6rem;
+}
+
+.artwork, .web{
+    background-color: #000;
+    height: 40vh;
+    width: 69vh;
+    font-size: 2rem;
+    display: flex;
+    justify-content: baseline;
+    align-items: flex-end;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 1.6rem;
+}
+
+.artwork:hover{
+    transition: all 0.6s;
+    font-size: 3rem;
+    opacity: 0.8    ;
+}
+
+.web:hover{
+    transition: all 0.6s;
+    font-size: 3rem;
+    opacity: 0.8;
+}
+
+.artwork>p , .web>p{
+    margin: 3rem;
+}
+
+.artwork{
+    background-image: url(img/theywillcower-01.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.web{
+    background-image: url(img/unknown.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 @media only screen and (max-width: 600px) {
     .links{
         display: none;
@@ -234,14 +296,12 @@ img {
     .head{
         font-size: 3rem;
         font-weight: bold;
-        font-family: 'Prompt', sans-serif;
         margin: 10vh 0 0 0;
     }
     
     .bottom{
         font-size: 2rem;
         font-weight: bold;
-        font-family: 'Prompt', sans-serif;
         margin: 0;
     }
 
@@ -274,7 +334,7 @@ img {
     font-size: 6rem;
     text-align: center;
     margin: 6rem 0 0 0;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
   .main-container {
@@ -312,16 +372,18 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 2rem;
   }
   
   .card {
     margin: 20px;
     padding: 20px;
     width: 500px;
+    height: 230px;
     min-height: 200px;
     display: grid;
     grid-template-rows: 20px 50px 1fr 50px;
-    border-radius: 10px;
+    border-radius: 1rem;
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
     transition: all 0.2s;
     background-color: #404eed;
@@ -331,7 +393,7 @@ img {
   
   .card:hover {
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
-    transform: scale(1.01);
+    transform: scale(1.05);
   }
   
   .card__link,

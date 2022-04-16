@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kevin Immanuel</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/66994a06de.js" crossorigin="anonymous"></script>
 
 </head>
@@ -29,19 +31,18 @@
             <i class="fa-solid fa-bars"></i>
         </div>
     </div>
-    <div class="title-container" id="#home">
+    <div class="title-container" id="home">
         <div class="name-container">
-            <div class="head">Hello there !</div>
-            <div class="bottom">I am Kevin Immanuel .</div>
+            <div class="head" data-aos="zoom-out" data-aos-easing="ease">Hello there !</div>
+            <div class="bottom" data-aos="zoom-out" data-aos-delay="500" data-aos-easing="ease">I am Kevin Immanuel .</div>
         </div>
-        <img src="img/pfp.png" alt="">
     </div>
     <div class="left-container" id="#about">
-        <div class="about-title">
+        <div class="about-title" data-aos="zoom-out" data-aos-easing="ease">
             About Me
         </div>
         <div class="about-content">
-            <p>
+            <p data-aos="fade-in" data-aos-delay="100">
                 I'm a 15-year-old computer enthusiast learning about web development and design.<br>
                 There's not much to tell about me, but I play games and cut onions too.<br>
                 Check out my GitHub or other social media accounts so we can get in touch.
@@ -49,36 +50,46 @@
         </div>
     </div>
     <div class="right-container" id="#contact">
-        <div class="about-title">
+        <div class="about-title" data-aos="zoom-out" data-aos-easing="ease">
             Socials
         </div>
         <div class="about-content">
-            <button class="btn">
+            <button class="btn" data-aos="zoom-out">
                 <i class="fa-brands fa-discord"></i>
             </button>
-            <button class="btn">
+            <button class="btn" data-aos="zoom-out" data-aos-delay="100">
                 <i class="fa-brands fa-instagram"></i>
             </button>
-            <button class="btn">
+            <button class="btn" data-aos="zoom-out" data-aos-delay="200">
                 <i class="fa-solid fa-envelope"></i>
             </button>
-            <button class="btn">
+            <button class="btn" data-aos="zoom-out" data-aos-delay="300">
                 <i class="fa-brands fa-reddit"></i>
             </button>
-            <button class="btn">
+            <button class="btn" data-aos="zoom-out" data-aos-delay="400">
                 <i class="fa-brands fa-github"></i>
             </button>
         </div>
     </div>
-    <div class="left-container" id="projects">
-        <div class="about-title">
+    <div class="pro-container" id="projects">
+        <div class="about-title" data-aos="zoom-out" data-aos-easing="ease">
             Projects
         </div>
-        <div class="about-content">
-            <p>Browse all my projects on Github</p>
-            <button class="btn">
-                <a href="projects/project.html">All Projects</a>
-            </button>
+        <div class="pro-cont">
+            <a href="file:///C:/Users/billi/Documents/code/portfolio/projects/project.html">
+                <div class="parent" data-aos="zoom-out">
+                    <div class="artwork">
+                        <p>Artwork Projects</p>
+                    </div>
+                </div>
+            </a>
+            <a href="file:///C:/Users/billi/Documents/code/portfolio/projects/project.html">
+                <div class="parent" data-aos="zoom-out" data-aos-delay="100">
+                    <div class="web">
+                        <p>Coding Projects</p>
+                    </div>
+                </div>
+            </a>
         </div>
     </div>
     <div class="footer">
@@ -101,6 +112,10 @@
         </div>
     </div>
     <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>

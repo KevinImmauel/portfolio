@@ -16,3 +16,4 @@ for (var i = 0; i <= menuLink.length; i++){
         menu[i].style.cssText = 'display: none;'
     })
 }
+
