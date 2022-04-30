@@ -4,7 +4,7 @@ const menu = document.getElementsByClassName('menu')
 const menuLink = document.getElementsByClassName('menu-link')
 
 menuIcon[0].addEventListener("click", () => {
-    menu[0].style.cssText = 'display: flex'
+    menu[0].style.cssText = 'display: none'
 });
 
 menuClose[0].addEventListener("click", () => {

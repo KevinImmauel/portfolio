@@ -1,0 +1,13 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6rem;
+    background-color: #000;
+    color: #fff;
+}
+
+.head{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
