@@ -135,7 +135,6 @@ a:active {
     justify-content: end;
     text-align: left;
     background-color: #404eed;
-    height: 60vh;
 }
 
 .about-title{
@@ -224,7 +223,7 @@ a:active {
 }
 
 .parent{
-    background-color: #fff;
+    background-color: #000;
     margin: 2rem;
     border-radius: 1.6rem;
 }
@@ -244,13 +243,13 @@ a:active {
 .artwork:hover{
     transition: all 0.6s;
     font-size: 3rem;
-    opacity: 0.8    ;
+    opacity: 0.6;
 }
 
 .web:hover{
     transition: all 0.6s;
     font-size: 3rem;
-    opacity: 0.8;
+    opacity: 0.6;
 }
 
 .artwork>p , .web>p{
@@ -262,6 +261,31 @@ a:active {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.card{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-1{
+    background-image: url(img/YUS-01.png);
+}
+.card-2{
+    background-image: url(img/keepthemguessing-01.png);
+}
+.card-3{
+    background-image: url(img/donothunt-01.png);
+}
+.card-4{
+    background-image: url(img/theywillcower-01.png);
+}
+.card-5{
+    background-image: url(img/jetfinalfinal-01.png);
+}
+.card-6{
+    background-image: url(img/omenfinalfinal-01.png);
 }
 
 .web{
@@ -313,6 +337,7 @@ a:active {
     .about-content{
         font-size: 1.5rem;
         text-align: center;
+        margin: 0 2rem;
     }
 
     .left-container, .right-container{
@@ -327,6 +352,21 @@ a:active {
     .right-container>.about-content{
         display: grid;
         grid-template-columns: auto auto;
+        margin: 0;
+    }
+
+    .right-container>.about-content>.btn{
+        margin: 1rem;
+    }
+
+    .pro-cont{
+        flex-direction: column;
+        transform: scale(0.7);
+        margin: 0;
+    }
+
+    .pro-container{
+        display: flex;
     }
 }
 
@@ -450,4 +490,3 @@ a:active {
         font-size: 4rem;
     }
   }
-  
